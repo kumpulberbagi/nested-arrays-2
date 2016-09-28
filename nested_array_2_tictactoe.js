@@ -1,10 +1,10 @@
 // Initiate main function that generates random tic tac toe board each time it is called
 
-function tic_tac_toe_board() {
+function tic_tac_toe_board(num) {
   var table = [];
-  for (var i = 0; i < 9; i += 1) {
+  for (var i = 0; i < num; i += 1) {
     table[i] = [];
-    for (var j = 0; j < 9; j += 1) {
+    for (var j = 0; j < num; j += 1) {
       table[i][j] = tic_tac_toe_random();
     }
   }
@@ -19,4 +19,4 @@ function tic_tac_toe_random() {
 }
 
 // Result
-console.log(tic_tac_toe_board()) // => make a random tic tic board
+console.log(tic_tac_toe_board(15)) // => make a random tic tic board
