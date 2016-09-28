@@ -12,12 +12,12 @@ var roster = [
 function convert_roster_format(nestedArray) {
     var arrObj = [];
     // your convert code here
-    for (var i = 0; i < roster.length; i++) {
+    for (var i = 0; i < nestedArray.length; i++) {
       if (i > 0) {
         var obj = {};
-        for (var j = 0; j < roster[i].length; j++) {
-          var prop = roster[0][j];
-          obj[prop] = roster[i][j];
+        for (var j = 0; j < nestedArray[i].length; j++) {
+          var prop = nestedArray[0][j];
+          obj[prop] = nestedArray[i][j];
         }
         arrObj.push(obj);
       }
